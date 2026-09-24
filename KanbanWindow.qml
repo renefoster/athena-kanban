@@ -304,12 +304,11 @@ Item {
                             var date = new Date(modelData.createdAt);
                             if (isNaN(date.getTime())) return "Created: N/A";
 
-                            var localDate = new Date(date.getTime() + (8 * 60 * 60 * 1000));
-                            var y = localDate.getUTCFullYear();
-                            var m = ("0" + (localDate.getUTCMonth() + 1)).slice(-2);
-                            var d = ("0" + localDate.getUTCDate()).slice(-2);
-                            var hh = ("0" + localDate.getUTCHours()).slice(-2);
-                            var mm = ("0" + localDate.getUTCMinutes()).slice(-2);
+                            var y = date.getFullYear();
+                            var m = ("0" + (date.getMonth() + 1)).slice(-2);
+                            var d = ("0" + date.getDate()).slice(-2);
+                            var hh = ("0" + date.getHours()).slice(-2);
+                            var mm = ("0" + date.getMinutes()).slice(-2);
 
                             return "Created: " + y + "-" + m + "-" + d + " " + hh + ":" + mm;
                           }
@@ -438,12 +437,11 @@ Item {
                             var date = new Date(modelData.createdAt);
                             if (isNaN(date.getTime())) return "Created: N/A";
 
-                            var localDate = new Date(date.getTime() + (8 * 60 * 60 * 1000));
-                            var y = localDate.getUTCFullYear();
-                            var m = ("0" + (localDate.getUTCMonth() + 1)).slice(-2);
-                            var d = ("0" + localDate.getUTCDate()).slice(-2);
-                            var hh = ("0" + localDate.getUTCHours()).slice(-2);
-                            var mm = ("0" + localDate.getUTCMinutes()).slice(-2);
+                            var y = date.getFullYear();
+                            var m = ("0" + (date.getMonth() + 1)).slice(-2);
+                            var d = ("0" + date.getDate()).slice(-2);
+                            var hh = ("0" + date.getHours()).slice(-2);
+                            var mm = ("0" + date.getMinutes()).slice(-2);
 
                             return "Created: " + y + "-" + m + "-" + d + " " + hh + ":" + mm;
                           }
@@ -597,12 +595,11 @@ Item {
                             var date = new Date(modelData.createdAt);
                             if (isNaN(date.getTime())) return "Created: N/A";
 
-                            var localDate = new Date(date.getTime() + (8 * 60 * 60 * 1000));
-                            var y = localDate.getUTCFullYear();
-                            var m = ("0" + (localDate.getUTCMonth() + 1)).slice(-2);
-                            var d = ("0" + localDate.getUTCDate()).slice(-2);
-                            var hh = ("0" + localDate.getUTCHours()).slice(-2);
-                            var mm = ("0" + localDate.getUTCMinutes()).slice(-2);
+                            var y = date.getFullYear();
+                            var m = ("0" + (date.getMonth() + 1)).slice(-2);
+                            var d = ("0" + date.getDate()).slice(-2);
+                            var hh = ("0" + date.getHours()).slice(-2);
+                            var mm = ("0" + date.getMinutes()).slice(-2);
 
                             return "Created: " + y + "-" + m + "-" + d + " " + hh + ":" + mm;
                           }
