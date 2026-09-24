@@ -40,7 +40,7 @@ omarchy plugin add https://github.com/renefoster/athena-kanban --enable
 git clone https://github.com/renefoster/athena-kanban \
   ~/.config/omarchy/plugins/renefoster.athena-kanban
 
-omarchy plugin enable local.athena-kanban
+omarchy plugin enable renefoster.athena-kanban
 omarchy-restart-shell
 ```
 
@@ -49,7 +49,7 @@ omarchy-restart-shell
 Add this to your `~/.config/hypr/bindings.lua` to toggle the board with `Super+Shift+K`:
 
 ```lua
-o.bind("SUPER SHIFT", "K", "omarchy-shell shell toggle local.athena-kanban '{}'")
+o.bind("SUPER SHIFT", "K", "omarchy-shell shell toggle renefoster.athena-kanban '{}'")
 ```
 
 ---
@@ -59,8 +59,8 @@ o.bind("SUPER SHIFT", "K", "omarchy-shell shell toggle local.athena-kanban '{}'"
 To disable and remove the plugin:
 
 ```bash
-omarchy plugin disable local.athena-kanban
-omarchy plugin remove local.athena-kanban --yes
+omarchy plugin disable renefoster.athena-kanban
+omarchy plugin remove renefoster.athena-kanban --yes
 omarchy-restart-shell
 ```
 
