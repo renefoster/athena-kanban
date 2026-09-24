@@ -3,7 +3,7 @@
   "id": "renefoster.athena-kanban",
   "name": "Athena Kanban",
   "version": "1.0.0",
-  "author": "Rimuru",
+  "author": "Ren Foster",
   "description": "Floating window Kanban task board for Omarchy with WIP limits and status bar integration.",
   "kinds": [
     "panel",
