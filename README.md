@@ -38,7 +38,7 @@ omarchy plugin add https://github.com/renefoster/athena-kanban --enable
 
 ```bash
 git clone https://github.com/renefoster/athena-kanban \
-  ~/.config/omarchy/plugins/local.athena-kanban
+  ~/.config/omarchy/plugins/renefoster.athena-kanban
 
 omarchy plugin enable local.athena-kanban
 omarchy-restart-shell
