@@ -7,7 +7,7 @@ import "Model.js" as Model
 
 BarWidget {
   id: root
-  moduleName: "local.athena-kanban"
+  moduleName: "renefoster.athena-kanban"
 
   implicitWidth: button.implicitWidth
   implicitHeight: button.implicitHeight
@@ -64,7 +64,7 @@ BarWidget {
       if (b === Qt.MiddleButton) {
         root.refreshData()
       } else if (root.bar) {
-        root.bar.run("omarchy-shell shell toggle local.athena-kanban '{}'")
+        root.bar.run("omarchy-shell shell toggle renefoster.athena-kanban '{}'")
       }
     }
   }
